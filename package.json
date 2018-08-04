@@ -1,0 +1,37 @@
+{
+  "name": "magic-dots",
+  "version": "1.0.0",
+  "description": "React Magic Dots Component for React Slick Carousel",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patricktran/magic-dots.git"
+  },
+  "keywords": [
+    "react",
+    "slick",
+    "magic",
+    "dots",
+    "carousel",
+    "carousel",
+    "nav",
+    "bullet",
+    "nav",
+    "instagram",
+    "carousel",
+    "nav"
+  ],
+  "author": "Patrick Tran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patricktran/magic-dots/issues"
+  },
+  "homepage": "https://github.com/patricktran/magic-dots#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1"
+  }
+}
