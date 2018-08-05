@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 
-import ExampleComponent from 'react-magic-dots'
+import MagicSliderDots from 'react-magic-dots'
 
 export default class App extends Component {
   render () {
     return (
       <div>
-        <ExampleComponent text='Modern React component module' />
+        <MagicSliderDots  />
       </div>
     )
   }

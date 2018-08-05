@@ -24,7 +24,8 @@ export default {
   plugins: [
     external(),
     postcss({
-      modules: true
+      extract: "./dist/react-magic-slider-dots.css",
+      minimize: true
     }),
     url(),
     babel({
