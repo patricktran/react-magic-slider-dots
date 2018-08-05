@@ -118,11 +118,17 @@ export default class MagicSliderDots extends Component {
 }
 
 MagicSliderDots.propTypes = {
+    /** array of HTML element representing the slider dot.   */
     dots: PropTypes.array.isRequired,
+    /** number of slider dots to show. */
     numDotsToShow: PropTypes.number.isRequired,
+    /** width, in pixels, of a slider dot. */
     dotWidth: PropTypes.number.isRequired,
+    /** class name of parent div. */
     dotContainerClassName: PropTypes.string,
+    /** class name of active slider dot. */
     activeDotClassName: PropTypes.string,
+    /**class name of leftmost (prev) and rightmost (next) slider dot. */
     prevNextDotClassName: PropTypes.string
 }
 
