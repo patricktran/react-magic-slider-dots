@@ -1,6 +1,6 @@
 {
-  "name": "react-magic-dots-example",
-  "homepage": "https://patricktran.github.io/react-magic-dots",
+  "name": "react-magic-slider-dots-example",
+  "homepage": "https://patricktran.github.io/react-magic-slider-dots",
   "version": "1.0.0",
   "license": "MIT",
   "private": true,
@@ -8,9 +8,10 @@
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-magic-dots": "../dist/index.js",
+    "react-magic-slider-dots": "file:..",
     "react-scripts": "^1.1.4",
-    "react-slick": "^0.23.1"
+    "react-slick": "^0.23.1",
+    "react-syntax-highlight": "^15.3.1"
   },
   "scripts": {
     "start": "react-scripts start",

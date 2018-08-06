@@ -3,3 +3,23 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.intro{
+
+  padding: 10px;
+}
+
+.intro h1{
+  margin: 0;
+}
+
+h3 {
+  background: #00558B;
+  color: #fff;
+  font-size: 36px;
+  line-height: 100px;
+  margin: 10px;
+  padding: 2%;
+  position: relative;
+  text-align: center;
+}

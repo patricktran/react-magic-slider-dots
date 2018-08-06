@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './react-magic-slider-dots.css';
+import style from './react-magic-slider-dots.css';
 
 export default class MagicSliderDots extends Component {
 
@@ -111,7 +111,7 @@ export default class MagicSliderDots extends Component {
             (((dotWidth * numDotsToShow) - dotWidth) / 2) - (midIndex * dotWidth);
 
         return <div className={dotContainerClassName}
-            style={{ overflow: "hidden", margin: "auto", width: containerWidth + "px" }}>
+            style={{ position: "relative", overflow: "hidden", margin: "auto", width: containerWidth + "px" }}>
             <ul style={{ left: leftOffset + "px" }}> {adjustedDots} </ul>
         </div>
     }
@@ -122,7 +122,7 @@ MagicSliderDots.propTypes = {
     dots: PropTypes.array.isRequired,
     /** number of slider dots to show. */
     numDotsToShow: PropTypes.number.isRequired,
-    /** width, in pixels, of a slider dot. */
+    /** width, in pixels, of a slider dot including any margins/padding. */
     dotWidth: PropTypes.number.isRequired,
     /** class name of parent div. */
     dotContainerClassName: PropTypes.string,
