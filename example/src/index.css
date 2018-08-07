@@ -1,16 +1,11 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 10px;
   font-family: sans-serif;
 }
 
 div, button{
   outline: none
-}
-
-.intro{
-
-  padding: 10px;
 }
 
 .intro h1{
@@ -31,6 +26,10 @@ h3 {
   padding: 2%;
   position: relative;
   text-align: center;
+}
+
+section.code-example{
+  margin-top: 100px;
 }
 
 .slick-slider{

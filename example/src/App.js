@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Slider from "react-slick";
 import ToggleButton from 'react-toggle-button';
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { tomorrowNightEighties } from 'react-syntax-highlighter/styles/hljs';
 import MagicSliderDots from 'react-magic-slider-dots';
 import 'react-magic-slider-dots/dist/react-magic-slider-dots.css';
 
@@ -39,6 +41,8 @@ export default class App extends Component {
         return <MagicSliderDots dots={dots} numDotsToShow={4} dotWidth={30} />
       }
 
+    const codeString = '(num) => num + 1';
+
     return (
       <div>
         <label><ToggleButton
@@ -49,6 +53,66 @@ export default class App extends Component {
         <Slider {...settings} key={`slider_${enableMagicSliderDots}`}>
           {this.contentIndexes.map(index => <div key={index}><h3>{index}</h3></div>)}
         </Slider>
+
+        <section className="code-example">
+          <h4>Installation</h4>
+          <SyntaxHighlighter language='javascript' style={tomorrowNightEighties}>
+            {`
+            //install react slick and css
+            npm install react-slick --save
+            npm install slick-carousel --save
+
+            //install react-magic-slider-dots
+            npm install react-magic-slider-dots --save    
+        `}</SyntaxHighlighter>
+          <h4></h4>
+          <SyntaxHighlighter language='javascript' style={tomorrowNightEighties}>{
+            `
+        import Slider from "react-slick";
+        import "slick-carousel/slick/slick.css"; 
+        import "slick-carousel/slick/slick-theme.css";
+        import MagicSliderDots from 'react-magic-slider-dots';
+
+        class App extends Component {
+
+        render() {
+
+          const settings = {
+              dots: true,
+              arrows: true,
+              infinite: false,
+              speed: 500,
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              appendDots: (dots) => {
+                return <MagicSliderDots dots={dots} numDotsToShow={4} dotWidth={30} />
+              }
+            };
+
+            return (<Slider {...settings}>
+              <div>
+                <h3>1</h3>
+              </div>
+              <div>
+                <h3>2</h3>
+              </div>
+              <div>
+                <h3>3</h3>
+              </div>
+              <div>
+                <h3>4</h3>
+              </div>
+              <div>
+                <h3>5</h3>
+              </div>
+              <div>
+                <h3>6</h3>
+              </div>
+            </Slider>) 
+          }
+        }`
+          }</SyntaxHighlighter>
+        </section>
       </div>
     );
   }
