@@ -41,8 +41,6 @@ export default class App extends Component {
         return <MagicSliderDots dots={dots} numDotsToShow={4} dotWidth={30} />
       }
 
-    const codeString = '(num) => num + 1';
-
     return (
       <div>
         <label><ToggleButton
@@ -54,6 +52,7 @@ export default class App extends Component {
           {this.contentIndexes.map(index => <div key={index}><h3>{index}</h3></div>)}
         </Slider>
 
+        <h4>Api - <a href="https://patricktran.github.io/react-magic-slider-dots/" target="_blank">click here</a></h4>
         <section className="code-example">
           <h4>Installation</h4>
           <SyntaxHighlighter language='javascript' style={tomorrowNightEighties}>

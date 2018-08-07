@@ -11,14 +11,13 @@
 npm install --save react-magic-slider-dots
 ```
 
-⚠️ Also install react-slick and slick-carousel for css and font
+⚠️ Also install react-slick and slick-carousel for css and font [React Slick Documentation](https://github.com/akiran/react-slick)
 ```bash
 npm install slick-carousel
 npm install react-slick --save
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 ```
-###### [React Slick Documentation](https://github.com/akiran/react-slick)
 
 ## [DEMO](https://patricktran.github.io/react-magic-slider-dots/)
 
@@ -78,6 +77,19 @@ import "slick-carousel/slick/slick-theme.css";
           }
         }
 ```
+
+### API
+
+This a list of props that you can pass down to the component:
+
+| Property | Description | Default value | Type | Required |
+| -------- | ----------- | ------------- | ---- | -------- |
+| `dots`  | array of HTML <li> elements representing the slider dot |  | array | yes
+| `numDotsToShow`  | number of slider dots to show  |  | number | yes
+| `dotWidth`  | width, in pixels, of a slider dot including any margins/padding  |  | number | yes
+| `dotContainerClassName` | class name of parent div | `magic-dots slick-dots` | string |
+| `activeDotClassName` | class name of active slider dot | `slick-active` | string |
+| `prevNextDotClassName` | class name of leftmost (prev) and rightmost (next) slider dot. | `small` | string |
 
 ## License
 
