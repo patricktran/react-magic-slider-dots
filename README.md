@@ -84,12 +84,12 @@ This a list of props that you can pass down to the component:
 
 | Property | Description | Default value | Type | Required |
 | -------- | ----------- | ------------- | ---- | -------- |
-| `dots`  | array of HTML <li> elements representing the slider dot |  | array | yes
+| `dots`  | array of HTML li elements representing the slider dot |  | array | yes
 | `numDotsToShow`  | number of slider dots to show  |  | number | yes
 | `dotWidth`  | width, in pixels, of a slider dot including any margins/padding  |  | number | yes
 | `dotContainerClassName` | class name of parent div | `magic-dots slick-dots` | string |
 | `activeDotClassName` | class name of active slider dot | `slick-active` | string |
-| `prevNextDotClassName` | class name of leftmost (prev) and rightmost (next) slider dot. | `small` | string |
+| `prevNextDotClassName` | class name of left-most (prev) and right-most (next) slider dot. | `small` | string |
 
 ## License
 
