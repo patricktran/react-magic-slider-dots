@@ -1,9 +1,9 @@
-# react-magic-dots
+# react-magic-slider-dots
 
-> React Magic Dots Component for React Slick Carousel
+> React Magic Slider Dots Component for React Slick Carousel
 *Inspired by Instagram*
 
-[![NPM](https://img.shields.io/npm/v/react-magic-dots.svg)](https://www.npmjs.com/package/react-magic-dots) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/react-magic-slider-dots.svg)](https://www.npmjs.com/package/react-magic-slider-dots) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
@@ -14,17 +14,50 @@ npm install --save react-magic-slider-dots
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+        import React, { Component } from 'react'
+        import Slider from 'react-slick';
+        import 'slick-carousel/slick/slick.css'; 
+        import 'slick-carousel/slick/slick-theme.css';
+        import MagicSliderDots from 'react-magic-slider-dots';
 
-import MyComponent from 'react-magic-dots'
+        class App extends Component {
 
-class Example extends Component {
-  render () {
-    return (
-      <MyComponent />
-    )
-  }
-}
+        render() {
+
+          const settings = {
+              dots: true,
+              arrows: true,
+              infinite: false,
+              speed: 500,
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              appendDots: (dots) => {
+                return <MagicSliderDots dots={dots} numDotsToShow={4} dotWidth={30} />
+              }
+            };
+
+            return (<Slider {...settings}>
+              <div>
+                <h3>1</h3>
+              </div>
+              <div>
+                <h3>2</h3>
+              </div>
+              <div>
+                <h3>3</h3>
+              </div>
+              <div>
+                <h3>4</h3>
+              </div>
+              <div>
+                <h3>5</h3>
+              </div>
+              <div>
+                <h3>6</h3>
+              </div>
+            </Slider>) 
+          }
+        }
 ```
 
 ## License
