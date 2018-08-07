@@ -20,6 +20,8 @@ import "slick-carousel/slick/slick-theme.css";
 ```
 ###### [React Slick Documentation](https://github.com/akiran/react-slick)
 
+## [DEMO](https://patricktran.github.io/react-magic-slider-dots/)
+
 ## Usage
 
 ```jsx
