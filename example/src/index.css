@@ -4,6 +4,10 @@ body {
   font-family: sans-serif;
 }
 
+div, button{
+  outline: none
+}
+
 .intro{
 
   padding: 10px;
@@ -11,6 +15,11 @@ body {
 
 .intro h1{
   margin: 0;
+}
+
+label {
+  display: flex;
+  justify-content: center;
 }
 
 h3 {
@@ -23,3 +32,22 @@ h3 {
   position: relative;
   text-align: center;
 }
+
+.slick-slider{
+  width: 90%;
+  margin: auto;
+}
+
+.slick-next:before, .slick-prev:before {
+  color: #000;
+}
+
+ul.slick-dots{
+  position: relative;
+  width: 275px;
+  margin:auto;
+}
+
+ul.slick-dots li button::before {   
+  font-size: 12px;
+  content: '\2022'; }
