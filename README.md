@@ -1,7 +1,7 @@
 # react-magic-slider-dots
 
 > React Magic Slider Dots Component for React Slick Carousel
-*Inspired by Instagram*
+##### *Inspired by Instagram*
 
 [![NPM](https://img.shields.io/npm/v/react-magic-slider-dots.svg)](https://www.npmjs.com/package/react-magic-slider-dots) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -11,6 +11,15 @@
 npm install --save react-magic-slider-dots
 ```
 
+⚠️ Also install react-slick and slick-carousel for css and font
+```bash
+npm install slick-carousel
+npm install react-slick --save
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+```
+#### [Documentation](https://github.com/akiran/react-slick)
+
 ## Usage
 
 ```jsx
@@ -18,7 +27,9 @@ npm install --save react-magic-slider-dots
         import Slider from 'react-slick';
         import 'slick-carousel/slick/slick.css'; 
         import 'slick-carousel/slick/slick-theme.css';
+
         import MagicSliderDots from 'react-magic-slider-dots';
+        import 'react-magic-slider-dots/react-magic-slider-dots.css';
 
         class App extends Component {
 
@@ -54,6 +65,12 @@ npm install --save react-magic-slider-dots
               </div>
               <div>
                 <h3>6</h3>
+              </div>
+                <div>
+                <h3>7</h3>
+              </div>
+                <div>
+                <h3>8</h3>
               </div>
             </Slider>) 
           }
