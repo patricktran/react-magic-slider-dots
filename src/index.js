@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import style from './react-magic-slider-dots.css';
+import './magic-dots.css';
 
 export default class MagicSliderDots extends Component {
 

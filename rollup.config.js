@@ -24,7 +24,7 @@ export default {
   plugins: [
     external(),
     postcss({
-      extract: "./dist/react-magic-slider-dots.css",
+      extract: "./dist/magic-dots.css",
       minimize: true
     }),
     url(),

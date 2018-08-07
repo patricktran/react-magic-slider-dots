@@ -1,6 +1,6 @@
 {
-  "short_name": "react-magic-dots",
-  "name": "react-magic-dots",
+  "short_name": "react-magic-slider-dots",
+  "name": "react-magic-slider-dots",
   "start_url": "./index.html",
   "display": "standalone",
   "theme_color": "#000000",

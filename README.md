@@ -18,7 +18,7 @@ npm install react-slick --save
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 ```
-#### [Documentation](https://github.com/akiran/react-slick)
+###### [React Slick Documentation](https://github.com/akiran/react-slick)
 
 ## Usage
 
@@ -29,7 +29,7 @@ import "slick-carousel/slick/slick-theme.css";
         import 'slick-carousel/slick/slick-theme.css';
 
         import MagicSliderDots from 'react-magic-slider-dots';
-        import 'react-magic-slider-dots/react-magic-slider-dots.css';
+        import 'react-magic-slider-dots/magic-dots.css';
 
         class App extends Component {
 
