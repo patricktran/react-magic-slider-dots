@@ -5,6 +5,8 @@
 
 [![NPM](https://img.shields.io/npm/v/react-magic-slider-dots.svg)](https://www.npmjs.com/package/react-magic-slider-dots) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+![screenshot](/magic-slider-dots-screenshot.png?raw=true)
+
 ## Install
 
 ```bash

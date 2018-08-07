@@ -52,8 +52,8 @@ export default class App extends Component {
           {this.contentIndexes.map(index => <div key={index}><h3>{index}</h3></div>)}
         </Slider>
 
-        <h4>Api - <a href="https://patricktran.github.io/react-magic-slider-dots/" target="_blank">click here</a></h4>
         <section className="code-example">
+          <h4>API - <a href="https://patricktran.github.io/react-magic-slider-dots/" target="_blank">click here</a></h4>
           <h4>Installation</h4>
           <SyntaxHighlighter language='javascript' style={tomorrowNightEighties}>
             {`
