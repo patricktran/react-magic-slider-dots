@@ -38,7 +38,7 @@ export default class App extends Component {
 
     if (enableMagicSliderDots)
       settings['appendDots'] = (dots) => {
-        return <MagicSliderDots dots={dots} numDotsToShow={4} dotWidth={30} />
+        return <MagicSliderDots dots={dots} numDotsToShow={5} dotWidth={30} />
       }
 
     return (
@@ -86,7 +86,7 @@ export default class App extends Component {
               slidesToShow: 1,
               slidesToScroll: 1,
               appendDots: (dots) => {
-                return <MagicSliderDots dots={dots} numDotsToShow={4} dotWidth={30} />
+                return <MagicSliderDots dots={dots} numDotsToShow={5} dotWidth={30} />
               }
             };
 
