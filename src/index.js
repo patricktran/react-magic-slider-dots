@@ -34,14 +34,16 @@ export default class MagicSliderDots extends Component {
                     this.maxIndex = activeIndex + 1;
                 }
                 else {
-                    //handle if initialSlide from react-slick has a value greater than 0
-                    if (activeIndex === dots.length - 1) {
-                        this.maxIndex = activeIndex;
-                        this.minIndex = this.maxIndex - (numDotsToShow - 1);
-                    }
-                    else {
-                        this.minIndex = activeIndex - 1 < 0 ? 0 : activeIndex - 1;
-                        this.maxIndex = (this.minIndex + (numDotsToShow - 1)) > (dots.length - 1) ? dots.length - 1 : this.minIndex + (numDotsToShow - 1);
+                    //special case - handle if initialSlide from react-slick has a value greater than 0
+                    if (this.minIndex === 0 && this.maxIndex === 0) {
+                        if (activeIndex === dots.length - 1) {
+                            this.maxIndex = activeIndex;
+                            this.minIndex = this.maxIndex - (numDotsToShow - 1);
+                        }
+                        else {
+                            this.minIndex = activeIndex - 1 < 0 ? 0 : activeIndex - 1;
+                            this.maxIndex = (this.minIndex + (numDotsToShow - 1)) > (dots.length - 1) ? dots.length - 1 : this.minIndex + (numDotsToShow - 1);
+                        }
                     }
                 }
             } else { //movingBackwards
