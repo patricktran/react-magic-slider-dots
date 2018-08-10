@@ -33,6 +33,17 @@ export default class MagicSliderDots extends Component {
                     this.minIndex = activeIndex - (numDotsToShow - 2);
                     this.maxIndex = activeIndex + 1;
                 }
+                else {
+                    //handle if initialSlide from react-slick has a value greater than 0
+                    if (activeIndex === dots.length - 1) {
+                        this.maxIndex = activeIndex;
+                        this.minIndex = this.maxIndex - (numDotsToShow - 1);
+                    }
+                    else {
+                        this.minIndex = activeIndex - 1 < 0 ? 0 : activeIndex - 1;
+                        this.maxIndex = (this.minIndex + (numDotsToShow - 1)) > (dots.length - 1) ? dots.length - 1 : this.minIndex + (numDotsToShow - 1);
+                    }
+                }
             } else { //movingBackwards
 
                 if (activeIndex === this.minIndex && activeIndex !== 0) {
@@ -112,7 +123,7 @@ export default class MagicSliderDots extends Component {
 
         return <div className={dotContainerClassName}
             style={{ position: "relative", overflow: "hidden", margin: "auto", width: containerWidth + "px" }}>
-            <ul style={{ left: leftOffset + "px" }}> {adjustedDots} </ul>
+            <ul style={{ transform: `translateX(${leftOffset}px)` }}> {adjustedDots} </ul>
         </div>
     }
 }
@@ -129,7 +140,7 @@ MagicSliderDots.propTypes = {
     /** class name of active slider dot. */
     activeDotClassName: PropTypes.string,
     /** class name of left-most (prev) and right-most (next) slider dot. */
-    prevNextDotClassName: PropTypes.string
+    prevNextDotClassName: PropTypes.string,
 }
 
 MagicSliderDots.defaultProps = {
