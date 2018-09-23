@@ -33,8 +33,8 @@ export default {
     }),
     resolve(),
     commonjs(),
-    minify({
+    /*minify({
       comments: false
-    })
+    })*/
   ]
 }

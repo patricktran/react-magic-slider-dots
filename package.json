@@ -1,7 +1,7 @@
 {
   "name": "react-magic-slider-dots",
   "version": "1.1.1",
-  "description": "React Magic Slider Dots Component for React Slick Carousel",
+  "description": "React Magic Slider Dots Component for React Slick Carousel. Inspired by Instagram.",
   "author": "patricktran",
   "license": "MIT",
   "repository": "patricktran/react-magic-slider-dots",
@@ -59,5 +59,16 @@
   },
   "files": [
     "dist"
+  ],
+  "keywords": [
+    "react",
+    "react-component",
+    "react slick",
+    "carousel",
+    "slick carousel",
+    "instagram gallery",
+    "carousel navigation",
+    "carousel dots",
+    "image slider dots"
   ]
 }
