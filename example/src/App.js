@@ -30,7 +30,7 @@ export default class App extends Component {
     var settings = {
       dots: true,
       arrows: true,
-      infinite: false,
+      infinite: true,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1
@@ -62,14 +62,14 @@ export default class App extends Component {
             npm install slick-carousel --save
 
             //install react-magic-slider-dots
-            npm install react-magic-slider-dots --save    
+            npm install react-magic-slider-dots --save
         `}</SyntaxHighlighter>
           <h4></h4>
           <SyntaxHighlighter language='javascript' style={tomorrowNightEighties}>{
             `
         import React, { Component } from 'react'
         import Slider from 'react-slick';
-        import 'slick-carousel/slick/slick.css'; 
+        import 'slick-carousel/slick/slick.css';
         import 'slick-carousel/slick/slick-theme.css';
         import MagicSliderDots from 'react-magic-slider-dots';
         import 'react-magic-slider-dots/magic-dots.css';
@@ -109,7 +109,7 @@ export default class App extends Component {
               <div>
                 <h3>6</h3>
               </div>
-            </Slider>) 
+            </Slider>)
           }
         }`
           }</SyntaxHighlighter>

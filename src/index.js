@@ -45,6 +45,13 @@ export default class MagicSliderDots extends Component {
                             this.maxIndex = (this.minIndex + (numDotsToShow - 1)) > (dots.length - 1) ? dots.length - 1 : this.minIndex + (numDotsToShow - 1);
                         }
                     }
+                    else {
+                      if (activeIndex === dots.length - 1) {
+                        // moving carousel backward from 0 to max index
+                        this.maxIndex = dots.length - 1
+                        this.minIndex = dots.length - numDotsToShow
+                      }
+                    }
                 }
             } else { //movingBackwards
 
@@ -52,6 +59,12 @@ export default class MagicSliderDots extends Component {
                     //list will move right
                     this.minIndex = activeIndex - 1;
                     this.maxIndex = this.minIndex + (numDotsToShow - 1);
+                } else {
+                  if (activeIndex === 0) {
+                    // moving carousel forward from max index to 0
+                    this.maxIndex = numDotsToShow - 1
+                    this.minIndex = 0
+                  }
                 }
             }
 
