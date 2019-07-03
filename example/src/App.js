@@ -22,7 +22,7 @@ export default class App extends Component {
     });
   }
 
-  contentIndexes = [...Array.from({ length: 18 }, (v, k) => k + 1).map((item) => item)];
+  contentIndexes = [...Array.from({ length: 10 }, (v, k) => k + 1).map((item) => item)];
 
   render() {
     const { enableMagicSliderDots } = this.state;
