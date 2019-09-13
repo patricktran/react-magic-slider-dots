@@ -10,7 +10,7 @@
     "react-dom": "^16.4.1",
     "react-magic-slider-dots": "file:..",
     "react-scripts": "^1.1.4",
-    "react-slick": "^0.23.1",
+    "react-slick": "^0.25.2",
     "react-syntax-highlighter": "^8.0.1",
     "react-toggle-button": "^2.2.0"
   },

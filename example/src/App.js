@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Slider from "react-slick";
+import Slider from 'react-slick';
 import ToggleButton from 'react-toggle-button';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { tomorrowNightEighties } from 'react-syntax-highlighter/styles/hljs';
@@ -7,22 +7,21 @@ import MagicSliderDots from 'react-magic-slider-dots';
 import 'react-magic-slider-dots/dist/magic-dots.css';
 
 export default class App extends Component {
-
   constructor(props) {
     super(props);
 
     this.state = {
       enableMagicSliderDots: true
-    }
+    };
   }
 
   handleDotToggle = () => {
     this.setState({
       enableMagicSliderDots: !this.state.enableMagicSliderDots
     });
-  }
+  };
 
-  contentIndexes = [...Array.from({ length: 10 }, (v, k) => k + 1).map((item) => item)];
+  contentIndexes = [...Array.from({ length: 10 }, (v, k) => k + 1).map(item => item)];
 
   render() {
     const { enableMagicSliderDots } = this.state;
@@ -30,32 +29,54 @@ export default class App extends Component {
     var settings = {
       dots: true,
       arrows: true,
-      infinite: true,
+      infinite: false,
       speed: 500,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 4
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 2
+          }
+        }
+      ]
     };
 
     if (enableMagicSliderDots)
-      settings['appendDots'] = (dots) => {
-        return <MagicSliderDots dots={dots} numDotsToShow={5} dotWidth={30} />
-      }
+      settings['appendDots'] = dots => {
+        return <MagicSliderDots dots={dots} numDotsToShow={5} dotWidth={30} />;
+      };
 
     return (
       <div>
-        <label><ToggleButton
-          value={enableMagicSliderDots}
-          onToggle={this.handleDotToggle} />
+        <label>
+          <ToggleButton value={enableMagicSliderDots} onToggle={this.handleDotToggle} />
           &nbsp;enable magic-slider-dots
         </label>
         <Slider {...settings} key={`slider_${enableMagicSliderDots}`}>
-          {this.contentIndexes.map(index => <div key={index}><h3>{index}</h3></div>)}
+          {this.contentIndexes.map(index => (
+            <div key={index}>
+              <h3>{index}</h3>
+            </div>
+          ))}
         </Slider>
 
         <section className="code-example">
-          <h4>API - <a href="https://patricktran.github.io/react-magic-slider-dots/" target="_blank">click here</a></h4>
+          <h4>
+            API -{' '}
+            <a href="https://patricktran.github.io/react-magic-slider-dots/" target="_blank">
+              click here
+            </a>
+          </h4>
           <h4>Installation</h4>
-          <SyntaxHighlighter language='javascript' style={tomorrowNightEighties}>
+          <SyntaxHighlighter language="javascript" style={tomorrowNightEighties}>
             {`
             //install react slick and css
             npm install react-slick --save
@@ -63,10 +84,10 @@ export default class App extends Component {
 
             //install react-magic-slider-dots
             npm install react-magic-slider-dots --save
-        `}</SyntaxHighlighter>
+        `}
+          </SyntaxHighlighter>
           <h4></h4>
-          <SyntaxHighlighter language='javascript' style={tomorrowNightEighties}>{
-            `
+          <SyntaxHighlighter language="javascript" style={tomorrowNightEighties}>{`
         import React, { Component } from 'react'
         import Slider from 'react-slick';
         import 'slick-carousel/slick/slick.css';
@@ -111,8 +132,7 @@ export default class App extends Component {
               </div>
             </Slider>)
           }
-        }`
-          }</SyntaxHighlighter>
+        }`}</SyntaxHighlighter>
         </section>
       </div>
     );
