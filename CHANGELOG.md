@@ -2,7 +2,8 @@
 
 # [1.2.0](https://github.com/patricktran/react-magic-slider-dots/compare/v1.1.3...v.1.2.0) (2019-09-10)
 
-Support for responsive breakpoints from react-slick
+Limited support for responsive breakpoints from react-slick  
+Reported react-slick breakpoint issue: https://github.com/akiran/react-slick/issues/1642
 
 <a name="1.1.3"></a>
 
