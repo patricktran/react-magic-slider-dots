@@ -1,3 +1,8 @@
+<a name="1.2.1"></a>
+# [1.2.1](https://github.com/patricktran/react-magic-slider-dots/compare/v1.2.0...v.1.2.1) (2020-05-14)
+
+Add scarf installation anayltics
+
 <a name="1.2.0"></a>
 
 # [1.2.0](https://github.com/patricktran/react-magic-slider-dots/compare/v1.1.3...v.1.2.0) (2019-09-10)
