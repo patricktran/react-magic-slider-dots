@@ -1,3 +1,8 @@
+<a name="1.2.2"></a>
+# [1.2.2](https://github.com/patricktran/react-magic-slider-dots/compare/1.2.1...1.2.2) (2020-06-30)
+
+Remove scarf
+
 <a name="1.2.1"></a>
 # [1.2.1](https://github.com/patricktran/react-magic-slider-dots/compare/1.2.0...1.2.1) (2020-05-14)
 
