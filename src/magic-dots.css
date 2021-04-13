@@ -1,20 +1,23 @@
 .magic-dots.slick-dots ul {
-    padding: 0;
-    display: flex;
-    transition: all .2s;
-    position: relative;
-    margin: 0px; }
-  
-  .magic-dots.slick-dots li.slick-active button::before {
-      color: #00558B;
-  }
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  transition: all 0.2s;
+  position: relative;
+  margin: 0px;
+}
 
-  .magic-dots.slick-dots li button::before {
-    transition: font-size .35s;    
-    font-size: 12px;
-    content: '\2022'; }
-  
-  .magic-dots.slick-dots li.small button::before {
-    font-size: 8px;
-    line-height: 20px; }
-  
+.magic-dots.slick-dots li.slick-active button::before {
+  color: #00558b;
+}
+
+.magic-dots.slick-dots li button::before {
+  transition: font-size 0.35s;
+  font-size: 12px;
+  content: '\2022';
+}
+
+.magic-dots.slick-dots li.small button::before {
+  font-size: 8px;
+  line-height: 20px;
+}
